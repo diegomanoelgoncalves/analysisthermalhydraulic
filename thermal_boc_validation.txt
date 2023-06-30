@@ -1,0 +1,60 @@
+
+ ******************************
+
+ Results Analysis Thermal 
+ 
+ ******************************
+
+ -- Reactor Design-- 
+
+ heigth active[cm]                                    Æ 
+ channel_width[m]                         1.900000e-01 
+ thickness gap[m]                         8.255000e-05 
+ thickness clad[m]                         6.096000e-04 
+ mass rate[kg/s]                         5.936766e+02 
+ pitch[m]                         1.259000e-02 
+ radius Fuel[m]                         4.058000e-03 
+ diameter[m]                         9.500300e-03 
+ diameter hydraulic[m]                         1.168163e-02 
+ velocity[m/s]                         4.160691e-01 
+ volume core[m³]                         3.545757e+00 
+ wetted perimeter[m²]                         3.000315e-02 
+ area channel[m2]                         8.762144e-05 
+ area subchannel[m2]                         1.568475e-02 
+ mass subchannel[kg/s]                         1.468146e+01 
+ mass assembly[kg/s]                         3.967963e-01 
+ flowrate assembly[kgm/s]                         9.360342e+02 
+ flowrate subchannel[kgm/s]                         4.528529e+03 
+ extrapolated_distance[m]                         1.980200e+02 
+
+ -- Heat  -- 
+
+
+ radial linear power[W/m]                         2.517965e+08 
+ actual surface heat flux[W/m3]                         5.108950e+05 
+ linear linear power[W/m]                         4.985570e+08 
+ linear power of the pin[W]]                         2.605275e+02 
+ Heat volumetric[MW/m3]                         1.837634e+02 
+ Flow rate[kg/m²s]                         7.450908e-01 
+ density [kg/m³]                        7.967842e+02 
+ Viscosity dynamic[-]                        1.048932e-04 
+ Conv. fluid[W/m.K]                        3.081937e+04 
+ Cond. fuel[W/m.K]                         3.543802e+00 
+ Cond. gap[W/m.K]                         2.760087e+03 
+ Cond. clad[W/m.K]                         1.252724e+01 
+
+ -- Temperature -- 
+
+
+ Fuel center temperature[ºK]                         1.094914e+03 
+ Pelet surface temperature[ºK]                         8.024014e+02 
+ inner cladding temperature[ºK]                         6.209908e+02 
+ coolant out[ºK]                         6.011616e+02 
+
+ -- Constants -- 
+
+
+ Prandlt[-]                        4.048883e-02
+ Reynolds[-]                        3.692005e+04
+ Nusselt
+ -- Results End --

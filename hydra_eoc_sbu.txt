@@ -1,0 +1,70 @@
+
+ ****************************** 
+ 
+ Results Analysis Hydraulic 
+ 
+ ****************************** 
+
+
+ -- Reactor Design-- 
+
+
+ heigth active[m]                         2.411250e+02 
+ channel_width[m]                         2.100000e-01 
+ thickness gap[m]                         8.255000e-05 
+ thickness clad[m]                         6.096000e-04 
+ Pitch[m]                         9.222750e-03 
+ radius Fuel[m]                         2.908000e-03 
+ Diameter[m]                         7.200300e-03 
+ Diameter hydraulic[m]                         7.786755e-03 
+ Velocity[m/s]                         4.115969e-01 
+ Volume core[m³]                         4.318034e+00 
+ wetted perimeter[m²]                         2.277749e-02 
+
+ -- Heat -- 
+
+
+ actual surface heat flux[W/m3]                         6.740636e+05 
+ linear linear power[W/m]                         1.117838e+09 
+ linear power of the pin[W]]                         2.999698e+02 
+ Heat volumetric[MW/m3]                         3.024712e+02 
+ Area channel[m2]                         4.434068e-05 
+ Area subchannel[m2]                         3.872520e-02 
+ Mass subchannel[kg/s]                         1.459568e+01 
+ Mass assembly[kg/s]                         3.944777e-01 
+ Mass rate[kg/s]                                     
+ Flowrate assembly[kg/s.m^2]                         3.769038e+02 
+ Flowrate subchannel[kg/s.m^2]                         8.896519e+03 
+ extrapolated_distance[m]                         2.435000e-02 
+ Flow rate[kg/m²s]                         7.370821e-01 
+ moderator entalpy in [kJ/kg]                         1.142050e+03 
+ actual heat flux[MW/m2]                         6.740636e-01 
+ Thermal Capacity[kJ/kg]                         4.902000e+00 
+ Quality max [-]                        -3.365695e-01 
+ Quality min [-]                        -3.552543e-01 
+ Entalpy max [kJ/kg]                         1.141662e+03 
+ Entalpy min [kJ/kg]                         1.119077e+03 
+ Pressure max [Pa]                         1.285443e+07 
+ Pressure min [Pa]                         1.283316e+07 
+
+ -- Departure Nucleate Boiling -- 
+
+
+ DNBR-W3-uniform                         7.202505e+00 
+ DNBR-W3-nouniform [kJ/kg]                         7.203046e+00 
+ DNBR-Bowring                         6.448870e+00 
+ Thermal Capacity[kJ/kg]                         4.838458e+00 
+ Entalpy sat.liquid [kJ/kg]                        1.525615e+03 
+ density [kg/m³]                        7.963835e+02 
+ Viscosity dynamic[-]                        1.047771e-04 
+
+ -- Constants -- 
+
+
+ Prandlt[-]                        1.430512e-04 
+ Reynolds[-]                        2.436040e+04 
+ Nusselt Dittus-Boelter Equation
+ Nusselt Gnielisnk Equation
+ Conv. fluid[W/mK]                        3.466173e+03 
+ Max total thermal[W/m]                         1.329549e+08 
+ -- Results End --
