@@ -140,30 +140,30 @@ MATLAB2015 +, ANSI-C, SERPENT.VTT
 
 ## Demonstration
 ### Example of calculation fuel assembly NuScale 4.35 enrichment U-235.
-- [Model Fuel Assembly](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/main/Example_model.png)
+- [Model Fuel Assembly]
 ![Example_model](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/2e5ef4ca-16f2-4a0e-a7e4-fc4dba025d73)
 
-- [Power Density](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/power_density_nuscale.png)
+- [Power Density]
 ![power_density_nuscale](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/fe687070-6429-48a5-ac3a-7628eb18af03)
 
-- [Pressure-MPa](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/pressure_nuscale.png)
+- [Pressure-MPa]
 ![pressure_nuscale](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/31790e85-ab95-432a-9ef4-bb1faea405f8)
 
-- [Peak Factor](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/peak_factor.png)
+- [Peak Factor]
 ![peak_factor](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/57c57759-0f67-4b7b-8d52-27366c882188)
 
-- [Entalpy-kj/kg](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/entalpy.png)
+- [Entalpy-kj/kg]
 ![entalpy](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/bd5e363d-baaa-4380-84f4-8eb55324dfbc)
 
-- [Quality-%](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/quality.png)
+- [Quality-%]
 ![quality](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/d3e6727e-69e2-4a23-ade1-046b72fcac4e)
 
-- [DNB-](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/dnb.png)
+- [DNB-]
 ![dnb](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/b1a8ba7f-94ba-4b18-9586-a3a4953104dc)
 
-- [Radial Temperature-K](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/radial_temperature.png)
+- [Radial Temperature-K]
 ![radial_temperature](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/ac5dd763-6b0f-45eb-a866-390470182d32)
 
-- [Axial Temperature-K](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/blob/thermal-hydraulic/axial_temperature.png)
+- [Axial Temperature-K]
 ![axial_temperature](https://github.com/diegomanoelgoncalves/analisys_thermal_hydraulic/assets/114114828/92be0ca0-904d-4b9d-8a76-8df409819623)
 
