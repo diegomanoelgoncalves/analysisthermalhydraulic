@@ -10,7 +10,7 @@
 
 
  heigth active[m]                         2.411250e+02 
- channel_width[m]                         2.100000e-01 
+ channel_width[m]                         1.900000e-01 
  thickness gap[m]                         8.255000e-05 
  thickness clad[m]                         6.096000e-04 
  Pitch[m]                         1.259840e-02 
@@ -29,17 +29,17 @@
  linear power of the pin[W]]                         3.172717e+02 
  Heat volumetric[MW/m3]                         1.837905e+02 
  Area channel[m2]                         8.784347e-05 
- Area subchannel[m2]                         2.368751e-02 
- Mass subchannel[kg/s]                         1.459568e+01 
- Mass assembly[kg/s]                         3.944777e-01 
+ Area subchannel[m2]                         1.568751e-02 
+ Mass subchannel[kg/s]                         1.451635e+01 
+ Mass assembly[kg/s]                         3.923338e-01 
  Mass rate[kg/s]                                     
- Flowrate assembly[kg/s.m^2]                         6.161761e+02 
- Flowrate subchannel[kg/s.m^2]                         4.490689e+03 
+ Flowrate assembly[kg/s.m^2]                         9.253447e+02 
+ Flowrate subchannel[kg/s.m^2]                         4.466283e+03 
  extrapolated_distance[m]                         2.435000e-02 
  Flow rate[kg/m²s]                         7.370923e-01 
  moderator entalpy in [kJ/kg]                         1.142709e+03 
  actual heat flux[MW/m2]                         5.109391e-01 
- Thermal Capacity[kJ/kg]                         4.221152e+00 
+ Thermal Capacity[kJ/kg]                         4.695102e+00 
  Quality max [-]                        -3.237845e-01 
  Quality min [-]                        -3.491330e-01 
  Entalpy max [kJ/kg]                         1.155501e+03 
@@ -50,9 +50,9 @@
  -- Departure Nucleate Boiling -- 
 
 
- DNBR-W3-uniform                         8.138805e+00 
- DNBR-W3-nouniform [kJ/kg]                         8.139723e+00 
- DNBR-Bowring                         8.070914e+00 
+ DNBR-W3-uniform                         9.033040e+00 
+ DNBR-W3-nouniform [kJ/kg]                         9.033546e+00 
+ DNBR-Bowring                         8.326042e+00 
  Thermal Capacity[kJ/kg]                         4.838583e+00 
  Entalpy sat.liquid [kJ/kg]                        1.525163e+03 
  density [kg/m³]                        7.963724e+02 
@@ -61,10 +61,10 @@
  -- Constants -- 
 
 
- Prandlt[-]                        1.430516e-04 
+ Prandlt[-]                        1.430516e-01 
  Reynolds[-]                        3.664146e+04 
  Nusselt Dittus-Boelter Equation
  Nusselt Gnielisnk Equation
- Conv. fluid[W/mK]                        3.194503e+03 
+ Conv. fluid[W/mK]                        7.779568e+04 
  Max total thermal[W/m]                         3.068114e+08 
  -- Results End --

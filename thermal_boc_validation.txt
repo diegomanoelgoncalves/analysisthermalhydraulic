@@ -7,7 +7,7 @@
 
  -- Reactor Design-- 
 
- heigth active[cm]                                    Æ 
+ heigth active[cm]                         2.411250e+02 
  channel_width[m]                         1.900000e-01 
  thickness gap[m]                         8.255000e-05 
  thickness clad[m]                         6.096000e-04 
@@ -17,7 +17,7 @@
  diameter[m]                         9.500300e-03 
  diameter hydraulic[m]                         1.168163e-02 
  velocity[m/s]                         4.160691e-01 
- volume core[m³]                         3.545757e+00 
+ volume core[m³]                         4.318034e+00 
  wetted perimeter[m²]                         3.000315e-02 
  area channel[m2]                         8.762144e-05 
  area subchannel[m2]                         1.568475e-02 
@@ -25,15 +25,15 @@
  mass assembly[kg/s]                         3.967963e-01 
  flowrate assembly[kgm/s]                         9.360342e+02 
  flowrate subchannel[kgm/s]                         4.528529e+03 
- extrapolated_distance[m]                         1.980200e+02 
+ extrapolated_distance[m]                         2.411487e+02 
 
  -- Heat  -- 
 
 
  radial linear power[W/m]                         2.517965e+08 
  actual surface heat flux[W/m3]                         5.108950e+05 
- linear linear power[W/m]                         4.985570e+08 
- linear power of the pin[W]]                         2.605275e+02 
+ linear linear power[W/m]                         6.071442e+08 
+ linear power of the pin[W]]                         3.172717e+02 
  Heat volumetric[MW/m3]                         1.837634e+02 
  Flow rate[kg/m²s]                         7.450908e-01 
  density [kg/m³]                        7.967842e+02 
@@ -46,10 +46,11 @@
  -- Temperature -- 
 
 
- Fuel center temperature[ºK]                         1.094914e+03 
- Pelet surface temperature[ºK]                         8.024014e+02 
- inner cladding temperature[ºK]                         6.209908e+02 
- coolant out[ºK]                         6.011616e+02 
+ Fuel center temperature[ºK]                         1.080752e+03 
+ Pelet surface temperature[ºK]                         7.882398e+02 
+ inner cladding temperature[ºK]                         6.068292e+02 
+ outer cladding temperature[ºK]                                     
+ coolant out[ºK]                                     
 
  -- Constants -- 
 

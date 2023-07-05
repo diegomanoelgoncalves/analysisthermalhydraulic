@@ -10,7 +10,7 @@ function [lambda1] = K_M5(tc)
     if tc>2133;
     lambda1=36
     else tc<=2133;
-    %lambda1=15.0636*exp(0.000461843*tc);
-    lambda1 = 8.6383*exp(0.0007*tc)
+    lambda1=15.0636*exp(0.000461843*tc);
+    %lambda1 = 8.6383*exp(0.0007*tc)
     end
 end

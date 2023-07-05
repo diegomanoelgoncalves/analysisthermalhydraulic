@@ -7,8 +7,8 @@
 %%fileexchange/9817-x-steam-thermodynamic-properties-of-water-and-steam
 %%http://www.iapws.org/relguide/IF97-Rev.html
 %% Import txt files power density result from pwd 
-file0 = fopen('hydra_eoc_nuscale.txt','w');
-PDZ1 = importdata('qeoc_nuscale.txt');
+file0 = fopen('hydra_boc_nuscale.txt','w');
+PDZ1 = importdata('qboc_nuscale.txt');
 Z1 =  importdata('z_axis_nuscale.txt');
 %Power_density linear [W/cm]
 power_density=PDZ1.data;
@@ -103,7 +103,7 @@ vd=viscosity_dyn;
 viscosity_kyn=viscosity_dyn.*density;
 % Fluid Flow constants
 Reynolds=(density*velocity*De)/(vd);
-Prandlt=(vd*Cp)/(K_fuel);
+Prandlt=(vd*Cp*10^3)/(K_fuel);
 % Darcy Friction Factor
 friction_factor=64/Reynolds;
 % Correlation Dittus-Boelter 
@@ -180,35 +180,35 @@ figure (1)
 hold on
 title('Fator de Pico')
 plot(z,FN,'.')
-xlabel('Z [cm]')
+xlabel('Axial [cm]')
 ylabel('Fn [-]')
 
 figure (3)
 hold on
 title('Calor específicio a pressão cte')
 plot(z,C_p,'.')
-xlabel('Z [cm]')
+xlabel('Axial [cm]')
 ylabel('C_{p} [kJ/kg]')
 
 figure (4)
 hold on
 title('Entalpia')
 plot(z,hf,'.')
-xlabel('Z [cm]')
+xlabel('Axial [cm]')
 ylabel('h [kJ/kg]')
 
 figure (5)
 hold on
 title('Pressão')
 plot(z,Pressure/1e6,'.')
-xlabel('Z [cm]')
+xlabel('Axial [cm]')
 ylabel('Pressão [MPa]')
 
 figure (6)
 hold on
 title('Título')
 plot(z,Xe,'.')
-xlabel('Z [cm]') % left y-axis 
+xlabel('Axial [cm]') % left y-axis 
 ylabel('Xe [%]') % right y-axis
 
 figure (7)
@@ -216,21 +216,21 @@ hold on
 title('DNB')
 plot(z,(DNBu),'x')
 legend('W3-uniform')
-xlabel('Z [cm]') % left y-axis 
+xlabel('Axial [cm]') % left y-axis 
 ylabel('DNB [-]') % right y-axis
         
 figure (8)
 hold on
 title('Densidade de potência superficial')
 plot(z,Q2A*10^-6,'.')
-xlabel('Z [cm]') % left y-axis 
-ylabel('Q_{local} [MW/m²]') % right y-axis
+xlabel('Axial [cm]') % left y-axis 
+ylabel('Densidade potência superfical [MW/m²]') % right y-axis
 
 figure (9)
 hold on
 title('W3')
 plot(z,q_w3u'*(10^-6),'.',z,q_bow'*(10^-6),'.')
-xlabel('Z [cm]') % left y-axis 
+xlabel('Axial [cm]') % left y-axis 
 ylabel('Q_{cr} [MW/m²]') % right y-axis
 legend('W3-uniform','bowring')
 

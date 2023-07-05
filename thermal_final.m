@@ -110,14 +110,14 @@ m=linspace(radius_fuel+thickness_gap+thickness_clad,radius_fuel+thickness_gap+th
 
 Tmod=((max(Q2R)*f(end)^2)/(2*(thickness_gap+thickness_clad+f(end))*H_fluid))+Tm_out;
 %To=((max(Q2R)*f(end)^2)/((f(end)+thickness_oxidus)*(K_oxidus./thickness_oxidus)))+Tmod;
-Tc=((max(Q2R)*f(end)^2)*(log((f(end)+thickness_clad)/(f(end)+thickness_gap)))/(2*K_clad))+Tm_out;
+Tc=((max(Q2R)*f(end)^2)*(log((f(end)+thickness_clad)/(f(end)+thickness_gap)))/(2*K_clad))+Tmod;
 Tg=((max(Q2R)*f(end)^2)/(2*(f(end)+thickness_gap)*H_gap))+Tc;
 Tcl=((max(Q2R)*f(end)^2)/(4*K_fuel))+Tg;
 
 for i=1:length(Q3)/10;
-T_mod(i)=Tm_out-((max(Q2R)*f(i)^2)/(2*(thickness_gap+thickness_clad+f(end))*(H_fluid)));
+T_mod(i)=Tmod-((max(Q2R)*f(i)^2)/(2*(thickness_gap+thickness_clad+f(end))*(H_fluid)));
 %T_o(i)=To-((max(Q2R)*f(i)^2)/(2*K_clad))*log((f(i)+thickness_oxidus)/(f(i)+thickness_clad));
-T_c(i)=Tc-((max(Q2R)*(f(i)^2)*(log((f(end)+thickness_clad)/(f(end)+thickness_gap)))/(2*K_clad)));
+T_c(i)=Tc-((max(Q2R)*(f(i)^2)*(log((f(end)+thickness_clad+thickness_gap)/(f(end)+thickness_gap)))/(2*K_clad)));
 T_g(i)=Tg-((max(Q2R)*f(i)^2)/(2*(f(i)+thickness_gap)*H_gap));
 T_cl(i)=Tcl-((max(Q2R)*f(i)^2)/(4*K_fuel));
 end
@@ -127,8 +127,8 @@ hold on
 title('Temperatura Radial')
 plot(1e3*m,T_mod,'o',1e3*c,T_c,'o',1e3*g,T_g,'o',1e3*f,T_cl,'o')
 legend('1-moderador','2-revestimento','3-gap','4-combsutível')
-xlabel('posição radial[cm]')
-ylabel('Temperatura[ºK]')
+xlabel('Radial [cm]')
+ylabel('Temperatura [ºK]')
 
 %% Temperature axial Analytical Method El Waki
 %Crossectional area
@@ -173,7 +173,7 @@ hold on
 title('Temperatura Axial')
 plot(z_axis,Ta_1,'o',z_axis,Ta_2,'o',z_axis,Ta_3,'o',z_axis,Ta_4,'o')
 legend('1-moderador','2-revestimento','3-gap','4-combsutível')
-xlabel('posição axial[cm]')
+xlabel('Axial[cm]')
 ylabel('Temperatura[ºK]')
 
 %% Results
@@ -297,12 +297,17 @@ fprintf(file0,'\n Conv. fluid[W/m.K]%36s %6.6f \n',(H_fluid));
 fprintf(file0,'\n Cond. fuel[W/m.K] %36s %6.6f \n',(K_fuel));
 fprintf(file0,'\n Cond. gap[W/m.K] %36s %6.6f \n',(H_gap));
 fprintf(file0,'\n Cond. clad[W/m.K] %36s %6.6f \n',(K_clad));
-fprintf(file0,'\n\n -- Temperature -- \n\n');
+fprintf(file0,'\n\n -- Max Temperature Radial -- \n\n');
 fprintf(file0,'\n Fuel center temperature[ºK] %36s %6.6f  \n',[max(T_cl)]);
 fprintf(file0,'\n Pelet surface temperature[ºK] %36s %6.6f  \n',[max(T_g)]);
 fprintf(file0,'\n inner cladding temperature[ºK] %36s %6.6f  \n ',[max(T_c)]);
 fprintf(file0,'\n outer cladding temperature[ºK] %36s %6.6f \n ',[min(T_c)]);
 fprintf(file0,'\n coolant out[ºK] %36s %6.6f -%6.6f  \n',[max(T_mod)]);
+fprintf(file0,'\n\n -- Max Temperature Axial -- \n\n');
+fprintf(file0,'\n Fuel temperature[ºK] %36s %6.6f  \n',[max(Ta_4)]);
+fprintf(file0,'\n Gap temperature[ºK] %36s %6.6f  \n',[max(Ta_3)]);
+fprintf(file0,'\n Cladding temperature[ºK] %36s %6.6f  \n ',[max(Ta_2)]);
+fprintf(file0,'\n Moderator temperature[ºK] %36s %6.6f \n ',[max(Ta_1)]);
 fprintf(file0,'\n\n -- Constants -- \n\n');
 fprintf(file0,'\n Prandlt[-]%36s%6.6f \n',max(Prandlt));
 fprintf(file0,'\n Reynolds[-]%36s%6.6f \n',max(Reynolds))

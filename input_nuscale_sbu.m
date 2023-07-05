@@ -24,12 +24,12 @@ Pressure_in=128.439;%[bar]
 extrapolated_distance=0.2047;%[m]
 percent_down_mass=1.00;
 
-core_bypass=8/100;%8.5%[%]
+core_bypass=8.5/100;%8.5%[%]
 K_fuel=K_fuel_UO2(700);%[W/mK]
 K_clad=K_M5(Tm_in);%[W/mK]
 H_gap=Hgap_He(531,1e5);%[W/cmK]
 K_oxidus=K_oxidus(Tm_in);%[W/mK]
-channel_width=0.21;%[m]
+channel_width=0.19;%[m]
 core_power=160;%[MW]
 
 
